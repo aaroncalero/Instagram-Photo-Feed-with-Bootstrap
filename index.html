@@ -1,89 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Document</title>
 </head>
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid "> <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i> <img
+                    src="./instagram.svg" alt=""> Instragram
+            </a>
+            <form class="d-flex">
+                <div class="container">
+                    <button type="button" class="btn btn-success ml-5" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo">Create a new post</button>
 
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form>
+                                          <div class="mb-3">
+                                            <label for="message-text" class="col-form-label"></label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <i class="fas fa-camera"></i>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                       <i class="fas fa-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logot out</a></li>
+                    </ul>
+                </div>
+                </div>
+                
+            </form>
+        </div>
+    </nav>
+    <div class="mt-0" style="background-color: white">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="index.html"><i class="fas fa-circle"></i></a></li>
+            <li class="page-item"><a class="page-link" href="pagina2.html"><i class="fas fa-circle"></i></a></li>
+        </ul>
+    </div>
+</header>
 <body>
 
-<header>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid"> <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i> <img src="./instagram.svg" alt=""> Instragram
-        </a>
-    
-    <form class="d-flex">
-        <button class="btn btn-outline-success" type="submit">Create new post</button>
-        <div class="dropdown mx-5">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-cog"></i>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
-    </form>
-  </div>
-</nav>
-      <ul class="pagination justify-content-center">
-        <li class="page-item"><a class="page-link" href="index.html"><i class="fas fa-circle"></i></a></li>
-        <li class="page-item"><a class="page-link" href="pagina2.html"><i class="fas fa-circle"></i></a></li>
-      </ul>
-    </header>
-
-    <div class="container">
+    <div class="container mt-0">
         <div class="row">
-          <div class="col-sm mb-5">
-            <img style="width:350px;" src="https://cdn.pixabay.com/photo/2021/01/31/11/33/mountains-5966604_960_720.jpg">
-          </div>
-          <div class="col-sm mb-5">
-            <img style="width:350px;" src="https://cdn.pixabay.com/photo/2021/02/02/15/23/rose-5974372_960_720.jpg">
-          </div>
-          <div class="col-sm mb-5">
-            <img style="width:350px;" src="https://cdn.pixabay.com/photo/2021/01/27/08/42/valentine-5954177_960_720.jpg">
-          </div>
+            <div class="col-sm mb-5">
+                <img style="width:350px;" src="https://cdn.pixabay.com/photo/2017/07/25/22/54/lego-2539844_960_720.jpg">
+            </div>
+            <div class="col-sm mb-5">
+                <img style="width:350px;"
+                    src="https://cdn.pixabay.com/photo/2016/08/29/01/56/millenium-falcon-1627322__340.jpg">
+            </div>
+            <div class="col-sm mb-5">
+                <img style="width:350px;"
+                    src="https://cdn.pixabay.com/photo/2016/11/23/14/41/characters-1853286_960_720.jpg">
+            </div>
         </div>
 
         <div class="row mb-5">
             <div class="col-sm mb-5">
-              <img style="width:350px;" src="https://cdn.pixabay.com/photo/2020/05/19/13/05/heart-5190672_960_720.jpg">
+                <img style="width:350px;"
+                    src="https://cdn.pixabay.com/photo/2017/10/28/15/09/star-wars-2897280__340.jpg">
             </div>
             <div class="col-sm mb-5">
-              <img style="width:350px;" src="https://cdn.pixabay.com/photo/2017/01/21/13/55/nature-1997282_960_720.jpg">
+                <img style="width:350px;"
+                    src="https://cdn.pixabay.com/photo/2013/07/19/17/55/spaceship-165353__340.jpg">
             </div>
             <div class="col-sm mb-5">
-              <img style="width:350px;" src="https://cdn.pixabay.com/photo/2021/01/17/07/35/dog-5924174__340.jpg">
+                <img style="width:350px;"
+                    src="https://cdn.pixabay.com/photo/2017/07/05/01/51/star-wars-2473201__340.png">
             </div>
-          </div>
+        </div>
 
-          <div class="row">
+        <div class="row">
             <div class="col-sm mb-5">
-              <img style="width:350px;" src="https://cdn.pixabay.com/photo/2020/11/22/21/44/flower-5768092__340.jpg">
+                <img style="width:350px;"
+                    src="https://cdn.pixabay.com/photo/2020/09/13/07/19/children-5567506__340.jpg">
             </div>
             <div class="col-sm mb-5">
-              <img style="width:350px;" src="https://cdn.pixabay.com/photo/2019/04/08/17/18/tulips-4112431__340.jpg">
+                <img style="width:350px;" src="https://cdn.pixabay.com/photo/2019/04/08/17/18/tulips-4112431__340.jpg">
             </div>
             <div class="col-sm mb-5">
-              <img style="width:350px;" src="https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671215_960_720.jpg">
+                <img style="width:350px;"
+                    src="https://cdn.pixabay.com/photo/2017/01/14/18/42/lightsaber-1980163__340.png">
             </div>
-          </div>
-      </div>
+        </div>
+    </div>
 
 
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
